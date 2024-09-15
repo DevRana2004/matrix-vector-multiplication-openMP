@@ -15,8 +15,10 @@ void matrix_vector_multiplication(int *matrix, int *vector, int *result, int row
 int main() {
     int rows = 3;
     int cols = 3;
-    int matrix[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9}; // 3x3 matrix
-    int vector[3] = {1, 2, 3}; // 3-dimensional vector
+    
+    // Changed matrix and vector values
+    int matrix[9] = {2, 4, 6, 8, 10, 12, 14, 16, 18}; // 3x3 matrix
+    int vector[3] = {3, 5, 7}; // 3-dimensional vector
     int result[3];
 
     matrix_vector_multiplication(matrix, vector, result, rows, cols);
